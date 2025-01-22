@@ -75,6 +75,7 @@ export async function createInvoice(formData: FormData) {
   }
 
   export async function deleteInvoice(id: string) {
+      throw new Error('Failed to Delete Invoice');
     const client = await db.connect();
 
     try {
